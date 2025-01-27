@@ -1,0 +1,9 @@
+torch
+streamlit
+python-dotenv
+pinecone-client
+langchain
+langchain_mistralai
+langchain_pinecone
+langchain_huggingface
+Pillow
