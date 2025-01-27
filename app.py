@@ -122,11 +122,7 @@ st.markdown("""
 # *Security Note:* Hardcoding API keys is not recommended for production.
 # Consider using environment variables or secret managers instead.
 
-LANGSMITH_ENDPOINT = "https://api.smith.langchain.com"
-LANGSMITH_API_KEY = "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"
-LANGSMITH_PROJECT = "pr-glossy-decency-92"
-MISTRAL_API_KEY = "OWEMpjjsDfW4CEJ5gl1ZC52gjBOqFOu5"
-PINECONE_API_KEY = "pcsk_59bCFc_3kH3fY1Ucqnow6G7QuMbFKq5m1FSPrBQjGbWEs4RcRxqjB3ghtNy8YDJwXfCokz"
+
 
 # *Set up environment variables*
 # These lines set the environment variables for use in the application.
