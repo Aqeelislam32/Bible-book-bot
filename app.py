@@ -342,7 +342,7 @@ st.markdown("""
 
 # *Sidebar with Common Queries*
 st.sidebar.header("Book Details")
-st.sidebar.write("**Name:** The Holy Bible")
+st.sidebar.write("**Name:** 📖 The Holy Bible")
 st.sidebar.write("**Author:** English Standard Version Translation Committee")
  
 # Displays a list of common questions in the sidebar to guide users.
