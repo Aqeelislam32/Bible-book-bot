@@ -403,6 +403,7 @@ for entry in st.session_state.chat_history:
 
 # *Option to Clear Chat History*
 # Provides a button to reset the chat history for a fresh start.
+# Button to delete chat history
 if st.button("Delete Chat History"):
     st.session_state.chat_history = []  # Clear chat history
-    st.experimental_rerun()  # Rerun the app to update the UI
+    st.toast("Chat history has been cleared.")  # Optional: Notify the user
