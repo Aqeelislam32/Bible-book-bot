@@ -202,8 +202,9 @@ Using this structure, *BibleBot* will deliver authoritative, personalized, and c
 llm = ChatMistralAI(model="mistral-large-latest", system_message=system_prompt)
 
 # *Initialize Pinecone for Vector Database*
-# Pinecone is used as the vector database to store and retrieve relevant text chunks.
-PINECONE_ENVIRONMENT = "us-east-1"  # Specify your Pinecone environment
+# Initialize Pinecone for vector database
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_ENVIRONMENT = "us-east-1"  # Ensure this matches your Pinecone environment
 pc = Pinecone(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
 
 # *Connect to Pinecone Index*
