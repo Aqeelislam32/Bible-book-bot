@@ -328,7 +328,7 @@ def process_query(query: str) -> str:
 # This creates a styled header for the chatbot interface.
 st.markdown("""
     <h1 style="text-shadow: 2px 2px 5px #4CAF50; font-weight: bold; text-align: center;">
-         📚Bible Chatbot📝
+         📚Bible Chatbot📒📝
     </h1>
 """, unsafe_allow_html=True)
 
@@ -343,10 +343,10 @@ st.markdown("""
 # *Sidebar with Common Queries*
 st.sidebar.header("Book Details")
 st.sidebar.write("**Name:** 📖 The Holy Bible")
-st.sidebar.write("**Author:** English Standard Version Translation Committee")
+st.sidebar.write("**✍️ Author:** English Standard Version Translation Committee")
  
 # Displays a list of common questions in the sidebar to guide users.
-st.sidebar.title("Frequently Asked Questions")
+st.sidebar.title(" 🔍 Frequently Asked Questions")
 
 # *Define Common Queries*
 prompts = [
