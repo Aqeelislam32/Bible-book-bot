@@ -11,6 +11,8 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.runnables import RunnableLambda
 from langchain.prompts import PromptTemplate
 from PIL import Image
+from langchain_core.globals import set_llm_cache
+from langchain_core.caches import InMemoryCache
 
 # Initialize Streamlit App Customization using CSS
 st.markdown("""
@@ -221,6 +223,9 @@ embedding_function = HuggingFaceEmbeddings(
     }
 )
 
+set_llm_cache(InMemoryCache())
+
+
 # *Check for CUDA Availability*
 # Inform the user if the model is running on CPU, which may be slower.
 if not torch.cuda.is_available():
@@ -282,7 +287,7 @@ retrieval_chain = RetrievalQA.from_chain_type(
     retriever=retriever,
     chain_type_kwargs={"prompt": retrieval_prompt}  # Pass the combined prompt
 )
-
+@st.cache_data
 def process_query(query: str) -> str:
     """
     Process a single query and return the bot's response.
