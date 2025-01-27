@@ -126,11 +126,11 @@ st.markdown("""
 
 # *Set up environment variables*
 # These lines set the environment variables for use in the application.
-os.environ["LANGCHAIN_ENDPOINT"] = LANGSMITH_ENDPOINT
-os.environ["LANGCHAIN_API_KEY"] = LANGSMITH_API_KEY
-os.environ["LANGCHAIN_PROJECT"] =LANGSMITH_PROJECT
-os.environ["MISTRAL_API_KEY"] = MISTRAL_API_KEY
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
+os.environ["LANGCHAIN_ENDPOINT"] = os.getenv("LANGSMITH_ENDPOINT")
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
+os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
+os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY")
+os.environ["PINECONE_API_KEY"] = os.getenv("PINECONE_API_KEY")
 
 # *Initialize the LLM (Language Model) with the system prompt in Serbian*
 # The system prompt defines the behavior and structure of the bot's responses.
