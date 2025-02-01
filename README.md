@@ -34,4 +34,4 @@ Bible Bot is an AI-powered Streamlit application designed to provide insightful,
 ---
 
 **4. Concise Summary**  
-Bible Bot is a Streamlit-based AI assistant that combines Mistral AI’s language capabilities with Pinecone’s vector search to answer biblical questions. Its intuitive design, including chat history, predefined prompts, and visually appealing UI, makes exploring scripture engaging and accessible.aaa
+Bible Bot is a Streamlit-based AI assistant that combines Mistral AI’s language capabilities with Pinecone’s vector search to answer biblical questions. Its intuitive design, including chat history, predefined prompts, and visually appealing UI, makes exploring scripture engaging and accessible.
