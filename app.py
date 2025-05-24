@@ -2,8 +2,7 @@ import os
 import torch
 import streamlit as st
 from dotenv import load_dotenv
-import pinecone
-
+from pinecone import Pinecone
 from langchain_mistralai import ChatMistralAI
 from langchain.prompts.chat import ChatPromptTemplate
 from langchain.chains import RetrievalQA
