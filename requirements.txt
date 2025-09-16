@@ -3,8 +3,9 @@ streamlit
 python-dotenv
 pinecone-client
 langchain
-langchain_mistralai
-langchain_pinecone
+langchain-mistralai
+langchain-pinecone
 langchain-huggingface
 Pillow
-
+transformers
+sentence-transformers
